@@ -39,7 +39,7 @@
         border-radius: 15px;
         padding: 5px 20px;
         display: grid;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 20% 80%;
       }
       .nav2{
         display: flex;
@@ -52,19 +52,40 @@
         text-decoration: none;
         color: #d7d7d7;
       }
+
+      @media only screen and (min-width: 200px) and (max-width: 450px){
+            .child{
+                width: 90%;
+            }
+        }
+        @media only screen and (min-width: 451px) and (max-width: 550px){
+            .child{
+                width: 80%;
+            }
+        }
+        @media only screen and (min-width: 551px) and (max-width: 750px){
+            .child{
+                width: 60%;
+            }
+        }
+        @media only screen and (min-width: 750px) and (max-width: 850px){
+            .child{
+                width: 50%;
+            }
+        }
     </style>
 </head>
 <body>
     <nav>
         <div id="navbar">
             <div class="nav1">
-                <p>Rebook</p>
+                <p>Shoppy</p>
             </div>
             <div class="nav2">
-                <p>
+                <p id="mns">
                    <a href="mens.html">Mens</a> 
                 </p>
-                <p>
+                <p id="wmns">
                    <a href="womens.html">Womens</a> 
                 </p>
                 <p>
@@ -73,7 +94,7 @@
                  <p>
                    <a href="signup.html">Signup</a> 
                 </p>
-                <p>
+                <p id="crt">
                   <a href="cart.html">Your Cart</a> 
                </p>
             </div>
@@ -118,4 +139,18 @@
         alert("signup successfull")
         location.replace("login.html")
     }
+
+
+
+
+    //welcome
+let loginData=JSON.parse(localStorage.getItem("loginAs"))
+if(loginData==null){
+  let mens=document.getElementById("mns")
+  let womens=document.getElementById("wmns")
+  let cart=document.getElementById("crt")
+  mens.style.visibility="hidden";
+  womens.style.visibility="hidden";
+  cart.style.visibility="hidden";
+}
 </script>
