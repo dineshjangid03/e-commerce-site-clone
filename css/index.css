@@ -1,0 +1,27 @@
+#navbar {
+    /* border: 2px solid red; */
+    background-color: #1c2938;
+    border-radius: 15px;
+    padding: 5px 20px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+  /* .nav1{
+    border: 2px solid white;
+  } */
+  .nav2{
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav1>p{
+    color: #d7d7d7;
+  }
+  .nav2>p>a{
+    text-decoration: none;
+    color: #d7d7d7;
+  }
+  .textCenter{
+    text-align: center;
+    
+  }

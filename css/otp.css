@@ -1,0 +1,23 @@
+
+*{
+    text-align: center;
+}
+.otp{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: rgb(249, 245, 245);
+}
+button{
+    margin-top: 15px;
+    background-color: rgb(17, 108, 193);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+input{
+    padding: 4px;
+}

@@ -5,75 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
-    <style>
-        .parent{
-            text-align: center; 
-            margin-top: 20px;        
-        }
-        .child{
-            padding: 20px;
-            padding-bottom: 30px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            width: 30%;
-            margin: auto;
-            border-radius: 10px;
-        }
-        input{
-            margin: 10px;
-            width: 90%;
-            height: 40px;
-            border-radius: 6px;
-            border: 1px solid gray;
-            color: gray;
-        }
-        #submit{
-            border: none;
-            background-color: rgb(214, 214, 214);
-        }
-
-    </style>
-    <style>
-        /* for navbar */
-         #navbar {
-        background-color: #1c2938;
-        border-radius: 15px;
-        padding: 5px 20px;
-        display: grid;
-        grid-template-columns: 20% 80%;
-      }
-      .nav2{
-        display: flex;
-        justify-content: space-around;
-      }
-      .nav1 > p {
-        color: #d7d7d7;
-      }
-      .nav2 > p > a{
-        text-decoration: none;
-        color: #d7d7d7;
-      }
-
-      @media only screen and (min-width: 200px) and (max-width: 450px){
-            .child{
-                width: 90%;
-            }
-        }
-        @media only screen and (min-width: 451px) and (max-width: 550px){
-            .child{
-                width: 80%;
-            }
-        }
-        @media only screen and (min-width: 551px) and (max-width: 750px){
-            .child{
-                width: 60%;
-            }
-        }
-        @media only screen and (min-width: 750px) and (max-width: 850px){
-            .child{
-                width: 50%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
     <nav>
@@ -123,34 +55,4 @@
     </div>
 </body>
 </html>
-<script>
-    document.querySelector("form").addEventListener("submit",myfcn)
-    let signin=JSON.parse(localStorage.getItem("id_pswd"))||[]
-
-    function myfcn(){
-        event.preventDefault()
-        let obj={
-            name:document.querySelector("#name").value,
-            email:document.querySelector("#email").value,
-            pswd:document.querySelector("#password").value
-        }
-        signin.push(obj)
-        localStorage.setItem("id_pswd",JSON.stringify(signin))
-        alert("signup successfull")
-        location.replace("login.html")
-    }
-
-
-
-
-    //welcome
-let loginData=JSON.parse(localStorage.getItem("loginAs"))
-if(loginData==null){
-  let mens=document.getElementById("mns")
-  let womens=document.getElementById("wmns")
-  let cart=document.getElementById("crt")
-  mens.style.visibility="hidden";
-  womens.style.visibility="hidden";
-  cart.style.visibility="hidden";
-}
-</script>
+<script src="javascript/signup.js"></script>
