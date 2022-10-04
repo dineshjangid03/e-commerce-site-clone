@@ -5,57 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
-    <style>
-        
-        .parent{
-            /* display: flex; */
-            width: 50%;
-            margin: auto;
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-            gap: 20px;
-        }
-        .parent>div{
-            margin: auto;
-        }
-        .child1{
-            /* border: 1px solid rgb(234, 230, 230); */
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            padding: 20px;
-        }
-        .child2{
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            padding: 20px;
-        }
-        .right{
-            text-align: right;
-        }
-        .red{
-            border-top: 1px solid red;
-        }
-        .gray{
-            border-top: 1px solid gray;
-        }
-        table{
-            width: 100%;
-            margin: auto;
-        }
-        td+td{
-            text-align: right;
-        }
-        input{
-            margin-bottom: 10px;
-            margin-top: 5px;
-            padding: 3px;
-        }
-        label{
-            font-size: 15px;
-        }
-        input[type="submit"]{
-           margin-left: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/checkout.css">
 </head>
 <body>
     <div class="parent">
@@ -101,29 +51,4 @@
     </div>
 </body>
 </html>
-<script>
-    let total=localStorage.getItem("total")
-    let ttl=document.querySelectorAll(".total")
-    for(let i=0; i<ttl.length; i++){
-        ttl[i].innerHTML=total
-    }
-   
-
-   document.querySelector("form").addEventListener("submit",submitform)
-    let cardn="1234567891234"
-    let mnth="2025-06"
-    let cvv="123"
-   function submitform(){
-    event.preventDefault()
-    let crdinp=document.querySelector("#ccn").value
-    let mnthinp=document.querySelector("#month").value
-    let cvvinp=document.querySelector("#cvv").value
-    if(crdinp==cardn&&mnthinp==mnth&&cvvinp==cvv){
-        location.replace("otp.html")
-    }else{
-        alert("Wrong Credentials")
-    }
-    
-    
-   }
-</script>
+<script src="javascript/checkout.js"></script>

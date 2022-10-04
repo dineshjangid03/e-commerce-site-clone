@@ -1,0 +1,61 @@
+#parent{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 40px;
+  }
+  #parent>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px 30px;
+    border-radius: 5px;
+  }
+  #parent>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  #navbar {
+    background-color: #1c2938;
+    border-radius: 15px;
+    padding: 5px 20px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+  nav{
+    position: sticky;
+    top: 0px;
+  }
+  .nav2{
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav1 > p {
+    color: #d7d7d7;
+  }
+  .nav2 > p > a{
+    text-decoration: none;
+    color: #d7d7d7;
+  }
+  .textCenter{
+    text-align: center;
+  }
+  .select{
+    margin: 20px;
+  }
+  select{
+    margin-left: 10px;
+    background-color: rgb(225, 217, 217);
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid gray;
+  }
+  button{
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  button:hover{
+    background-color: rgb(140, 117, 117);
+    color: white;
+    cursor: pointer;
+  }

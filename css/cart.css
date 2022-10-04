@@ -1,0 +1,103 @@
+
+    img{
+    max-width: 70px; 
+    }
+
+    h1{
+    text-align: center;
+    }
+    .maindiv{
+    display: flex;
+    }
+    .main1{
+    width: 55%;
+    /* border: 1px solid red; */
+    margin: auto;
+    }
+    .main2{
+    width: 40%;
+    /* border: 1px solid red; */
+    margin: auto;
+    text-align: center;
+    }
+
+    table, th, td {
+    border: 1px solid rgb(163, 162, 162);
+}
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    }
+    th {
+    height: 70px;
+    background-color: aliceblue;
+    }
+    .totaltable>tr>td:nth-child(1){
+    text-align: left;
+    padding: 10px 30px;
+    }
+    .totaltable>tr>td:nth-child(2){
+    text-align: right;
+    padding: 10px 30px;
+    }
+    #promo>form{
+    display: grid;
+    text-align: center;
+    justify-content: right;
+    }
+    .cartProductList{
+    text-align: center;
+    }
+    .removeButton{
+    background-color: red;
+    color: white;
+    }
+    .removeButton:hover{
+    cursor: pointer;
+    background-color:rgb(248, 191, 191);
+    color: red;
+    font-weight: bold;
+}
+.totaltable>tr>td:nth-child(1){
+    border-right: 1px solid transparent;
+    font-weight: bold;
+}
+.chkout{
+    margin-top: 20px;
+    padding: 10px 40px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.chkout:hover{
+    cursor: pointer;
+    background-color: rgb(165, 247, 165);
+    color: green;
+}
+
+/* for navbar */
+nav{
+position: sticky;
+top: 0px;
+}
+
+#navbar {
+background-color: #1c2938;
+border-radius: 15px;
+padding: 5px 20px;
+display: grid;
+grid-template-columns: 20% 80%;
+}
+.nav2{
+display: flex;
+justify-content: space-around;
+}
+.nav1 > p {
+color: #d7d7d7;
+}
+.nav2 > p > a{
+text-decoration: none;
+color: #d7d7d7;
+}

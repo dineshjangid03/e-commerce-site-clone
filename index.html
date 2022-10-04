@@ -5,35 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar</title>
-    <style>
-      #navbar {
-        /* border: 2px solid red; */
-        background-color: #1c2938;
-        border-radius: 15px;
-        padding: 5px 20px;
-        display: grid;
-        grid-template-columns: 20% 80%;
-      }
-      /* .nav1{
-        border: 2px solid white;
-      } */
-      .nav2{
-        /* border: 2px solid white; */
-        display: flex;
-        justify-content: space-around;
-      }
-      .nav1>p{
-        color: #d7d7d7;
-      }
-      .nav2>p>a{
-        text-decoration: none;
-        color: #d7d7d7;
-      }
-      .textCenter{
-        text-align: center;
-        
-      }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
     <nav>
@@ -68,40 +40,4 @@
   </body>
 
 </html>
-<script>
-
-let loginData=JSON.parse(localStorage.getItem("loginAs"))
-checklogin(loginData)
-
-
-//welcome
-if(loginData==null){
-  let mens=document.getElementById("mns")
-  let womens=document.getElementById("wmns")
-  let wlcm=document.getElementById("welcome")
-  let crt=document.getElementById("crt")
-  let lout=document.getElementById("lout")
-  wlcm.style.visibility="hidden";
-  mens.style.visibility="hidden";
-  womens.style.visibility="hidden";
-  crt.style.visibility="hidden";
-  lout.style.visibility="hidden";
-}
-else{
-  let wlcm=document.querySelector(".wlcm")
-  wlcm.innerText=loginData
-}
-
-
-  //check for login
-  function checklogin(loginData){
-    if(loginData==null){
-      alert("please login")
-      location.replace("login.html")
-    }
-    else if(loginData.length>=1){
-      return;
-    }
-  }
-
-</script>
+<script src="javascript/index.js"></script>
